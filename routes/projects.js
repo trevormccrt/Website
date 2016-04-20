@@ -10,20 +10,8 @@ var router = express.Router({
 
 router.get('/', function(req, res, next) {
   res.render('pages/projects', {
-    title: "Our Projects"
+    title: "My Projects"
   });
-});
-
-router.get('/picpilot',function(req,res,next){
-  res.render('pages/projects/picpilot',{
-    title: 'PicPilot'
-  })
-});
-
-router.get('/groundstation',function(req,res,next){
-  res.render('pages/projects/groundstation',{
-    title: 'Ground Station'
-  })
 });
 
 module.exports=router;

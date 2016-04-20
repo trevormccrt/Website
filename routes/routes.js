@@ -23,6 +23,19 @@ router.get('/', function(req, res, next) {
   });
 });
 
+router.get('/about', function(req, res, next) {
+  res.render('pages/aboutme', {
+    title: "About Me"
+  });
+});
+
+router.get('/sponsors', function(req, res, next) {
+  res.render('pages/sponsors', {
+    title: "Sponsors"
+  });
+});
+
+
 
 router.get('/contact', function(req, res, next) {
   res.render('pages/contact', {
