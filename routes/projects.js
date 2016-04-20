@@ -10,7 +10,7 @@ var router = express.Router({
 
 router.get('/', function(req, res, next) {
   res.render('pages/projects', {
-    title: "Our Projects"
+    title: "My Projects"
   });
 });
 
