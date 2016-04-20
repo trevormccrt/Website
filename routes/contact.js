@@ -23,7 +23,7 @@ var handleContact = function(req, res, next) {
           title: "Contact us",
           message: {
             type: "error",
-            content: "Looks like we're having some server issues. Try emailing us at uw.warg@gmail.com instead."
+            content: "Looks like we're having some server issues. Try emailing me manually instead."
           }
         });
       } else {
@@ -32,7 +32,7 @@ var handleContact = function(req, res, next) {
           title: "Contact us",
           message: {
             type: "success",
-            content: "Great! Thanks for contacting us. We'll get back to you as soon as we can."
+            content: "Great! Thanks for contacting me. I'll get back to you as soon as I can."
           }
         });
       }
