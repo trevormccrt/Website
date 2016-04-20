@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.uwarg.com/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.uwarg.com/about/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.uwarg.com/projects/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.uwarg.com/sponsors/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.uwarg.com/join/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.uwarg.com/contact/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.uwarg.com/projects/picpilot/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.uwarg.com/assets/docs/warg_sponsor_information_package.pdf</loc>
+  <lastmod>2015-11-11T16:09:49+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.uwarg.com/subscribe/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.uwarg.com/unsubscribe/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>

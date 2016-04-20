@@ -1,0 +1,33 @@
+@media(max-width: 420px){
+  #main-content{
+    padding: 12px 12px 48px 12px;
+    ul{
+      padding-left: 36px;
+    }
+    p{
+      font-size: 16px;
+    }
+    ul li{
+      font-size: 16px;
+    }
+    a{
+      font-size: 16px;
+    }
+  }
+  .social-media-wrapper .social-media-button a{
+    margin: 12px;
+    font-size: 36px;
+  }
+  .slideshow .carousel-item .carousel-caption-container{
+    padding: 0 8px 0 8px;
+    height: 60%;
+  }
+  footer{
+    height: 116px;
+  }
+  #google-maps-wrapper{
+    iframe{
+      height: 300px;
+    }
+  }
+}

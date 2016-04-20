@@ -1,0 +1,23 @@
+<% layout('layout') -%>
+
+<article id="main-content">
+
+	<h1>Contact me</h1>
+	<p>You're welcome to contact me about anything, whether you be an employer, or just someone who has questions about any of my projects. You can email me at <a href="mailto:trevormccrt@gmail.com">trevormccrt@gmail.com</a>, or just use the form below.</p>
+
+	<%  if (message) { %>
+	<div class="alert alert-<%=message.type%>">
+		<%= message.content %>
+	</div>
+	<%} %>
+	<form action="/contact/" method="post" name="contact-form" class="form center">
+		<label for="name">Name</label>
+		<input name="name" type="text" placeholder="Your name" required>
+		<label class="form-label" for="email">Email</label>
+		<input name="email" type="email" placeholder="Your email" required>
+		<label for="Message">Message</label>
+		<textarea name="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+		<button class="button" type="submit">Submit</button>
+	</form>
+
+</article>

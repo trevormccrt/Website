@@ -1,0 +1,27 @@
+$navbar_height: 60px;
+$navbar_background_color: #272727;
+$navbar_item_color_hover: rgb(112,112,112);
+$navbar_item_color_active: rgb(61,61,61);
+$navbar_text_color: white;
+$navbar_text_color_hover: #FFFFFF;
+$navbar_mobile_breakpoint: 770px; //NOTE: Also change in header-menu.js
+$navbar_mobile_menu_item_background_color: rgb(61,61,61);
+$navbar_mobile_menu_item_border_color: rgb(86,86,86);
+$navbar_mobile_menu_item_background_hover_color: rgb(86,86,86);
+$navbar_mobile_menu_item_background_active_color: rgb(35,35,35);
+$navbar_mobile_menu_item_text_color: #FFFFFF;
+$navbar_mobile_menu_item_text_hover_color: #FFFFFF; 
+
+$body_background_color: #FAFAFA;
+$content_text_color: #000;
+$content_link_color: #03A9F4;
+$content_link_color_hover: #3F51B5;
+
+$footer_height: 80px;
+$footer_height_negative: -80px;
+$footer_background_color: $navbar_background_color;
+$footer_text_color: $navbar_text_color;
+
+$alert_info_background_color: #29B6F6;
+$alert_error_background_color: #ef5350;
+$alert_success_background_color: #66BB6A;

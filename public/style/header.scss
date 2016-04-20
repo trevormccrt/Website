@@ -1,0 +1,112 @@
+@import "config";
+
+nav{
+  width: 100%;
+  height: $navbar_height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: $navbar_background_color;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+  #logo{
+    width: auto;
+    padding: 0;
+    &:hover{
+      background-color: transparent ;
+    }
+    img{
+      height: $navbar_height;
+      width: auto;
+    }
+  }
+  #menu-toggle{
+    display:none;
+  }
+  #menu{
+    display: flex;
+    .menu-item{
+      height: $navbar_height;
+      a{
+        height: $navbar_height;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 12px 0 12px;
+        min-width: 80px;
+        text-decoration: none;
+        color:$navbar_text_color;
+        font-size: 18px;
+        white-space: nowrap;
+        margin: 0;
+        &:hover{
+          background-color: $navbar_item_color_hover;
+          color: $navbar_text_color_hover;
+          transition: background-color 300ms ease-out;
+        }
+        &:active{
+          background-color: $navbar_item_color_active;
+        }
+      }
+
+    }
+  }
+}
+
+/*==========Mobile Mode Menu Bar=====*/
+@media (max-width: $navbar_mobile_breakpoint){
+  nav{
+    justify-content: space-between;
+    #menu-toggle{
+      display:flex;
+      align-items: center;
+      margin-right: 12px;
+      font-size: 40px;
+      height: 100%;
+      font-weight: bold;
+      color:$navbar_text_color;
+      cursor: pointer;
+    }
+    #menu{
+      display:none;
+      height:auto;
+      width:100%;
+      top:$navbar_height;
+      left:0;
+      margin:0;
+      padding:0;
+      position:absolute;
+      text-align:center;
+      z-index:9999 !important;
+      .menu-item{
+        display:block;
+        height:100%;
+        width:100%;
+        background-color: $navbar_mobile_menu_item_background_color;
+        border-top: 1px solid $navbar_mobile_menu_item_border_color;
+        &:first-child{
+          border-top: none;
+        }
+        a{
+          text-decoration:none;
+          color:$navbar_mobile_menu_item_text_color;
+          height:100%;
+          width: 100%;
+          display:inline-block;
+          line-height: 60px;
+          font-size:20px;
+          padding: 0;
+          &:hover{
+            text-decoration:none;
+            color:$navbar_mobile_menu_item_text_hover_color;
+            background-color:$navbar_mobile_menu_item_background_hover_color;
+            transition: background-color .25s linear;
+          }
+          &:active{
+            background-color: $navbar_mobile_menu_item_background_active_color;
+          }
+        }
+      }
+    }
+  }
+}
