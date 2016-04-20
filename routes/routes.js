@@ -4,9 +4,6 @@ var bodyParser = require('body-parser').urlencoded({ //for parsing forms with no
   extended: false
 });
 var handleContact = require('./contact');
-var handleSubscribe = require('./subscribe').handleSubscribe;
-var handleUnsubscribe = require('./subscribe').handleUnsubscribe;
-var unsubscribeMailingList = require('./subscribe').unsubscribeMailingList;
 var projectsRouter=require('./projects.js');
 
 //setting up and configuring the router
@@ -81,17 +78,5 @@ router.param('email', function(req, res, next, email) {
   req.body.email = email;
   next();
 });
-
-//so that users can type in uwarg.com/unsubscribe/email@example.com and it would unsubscribe them
-router.get('/unsubscribe/:type/:email', handleUnsubscribe);
-
-router.get('/unsubscribe', function(req, res, next) {
-  res.render('pages/unsubscribe', {
-    title: 'Unsubscribe',
-    message: false
-  });
-});
-
-router.post('/unsubscribe', bodyParser, handleUnsubscribe);
 
 module.exports = router;
