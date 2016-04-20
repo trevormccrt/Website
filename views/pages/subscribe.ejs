@@ -1,0 +1,41 @@
+<% layout('layout') -%>
+<article id="main-content">
+	<h1>Subscribe</h1>
+	<p>Fill out the form below to subscribe to our mailing list. You can unsubscribe from the mailing list <a href="/unsubscribe/">here</a>.</p>
+
+	<%  if (message) { %>
+	<div class="alert alert-<%=message.type%>">
+		<%= message.content %>
+	</div>
+	<%} %>
+
+	<form class="form center" method="post" action="/subscribe">
+		<label for="email">Email</label>
+		<input name="email" type="email" placeholder="Email" autofocus required>
+
+		<section class="checkbox-wrapper">
+			<div class="checkbox">
+				<input type="checkbox" name="general" value="General" checked="checked" disabled>
+				<p>General</p>
+			</div>
+			<div class="checkbox">
+				<input type="checkbox" name="mechanical" value="Mechanical Team" >
+				<p>Mechanical Team</p>
+			</div>
+			<div class="checkbox">
+				<input type="checkbox" name="software" value="Software Team">
+				<p>Software Team</p>
+			</div>
+			<div class="checkbox">
+				<input type="checkbox" name="electrical" value="Electrical/Hardware Team">
+				<p>Hardware/Electrical Team</p>
+			</div>
+			<!-- 			<div class="checkbox">
+                            <input type="checkbox" name="business" value="Business Team">
+                            <p>Buisness Team</p>
+                        </div> -->
+		</section>
+
+		<button class="button">Subscribe</button>
+	</form>
+</article>
