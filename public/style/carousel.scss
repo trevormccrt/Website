@@ -11,8 +11,17 @@
     align-items: center;
     align-content: center;
     .carousel-image{
-      width: 100%;
+      width: auto;
       height: auto;
+      align-content:center;
+      align-items:center;
+    }
+    .carousel-image-large{
+      width: auto;
+      height: auto;
+      padding-left:300px;
+      align-content:center;
+      align-items:center;
     }
     .carousel-caption-container{
       position:absolute;
