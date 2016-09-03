@@ -1,11 +1,11 @@
 .slideshow{
   width: 100%;
-  max-width: 1920px;
+  
   height: auto;
   margin: auto;
   .carousel-item{
     width: 100%;
-  
+    max-height: 500px;
     overflow: hidden;
     display: flex;
     align-items: center;
