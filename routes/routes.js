@@ -41,6 +41,12 @@ router.get('/contact', function(req, res, next) {
   });
 });
 
+router.get('/employers', function(req, res, next) {
+  res.render('pages/employers', {
+    title: "My Previous Employers",
+    message: false
+  });
+});
 router.post('/contact', bodyParser, handleContact);
 
 
